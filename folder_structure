@@ -1,0 +1,60 @@
+campus-delivery-hub/
+│
+├── index.html                  // Landing Page
+├── login.html
+├── signup.html
+├── forgot-password.html
+│
+├── student/
+│   ├── dashboard.html
+│   ├── my-orders.html
+│   ├── track-order.html
+│   ├── pickup-center.html
+│   ├── discounts.html
+│   ├── marketplace.html
+│   ├── university-store.html
+│   ├── notifications.html
+│   ├── profile.html
+│   ├── settings.html
+│   └── support.html
+│
+├── delivery/
+│   ├── dashboard.html
+│   ├── scan-qr.html
+│   ├── deliveries.html
+│   ├── delivery-history.html
+│   ├── earnings.html
+│   └── profile.html
+│
+├── admin/
+│   ├── dashboard.html
+│   ├── students.html
+│   ├── parcels.html
+│   ├── pickup-counters.html
+│   ├── delivery-partners.html
+│   ├── vendors.html
+│   ├── discounts.html
+│   ├── analytics.html
+│   ├── reports.html
+│   ├── notifications.html
+│   └── settings.html
+│
+├── vendor/
+│   ├── dashboard.html
+│   ├── offers.html
+│   ├── products.html
+│   ├── analytics.html
+│   └── profile.html
+│
+├── assets/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── icons/
+│
+└── components/
+    ├── navbar.html
+    ├── sidebar.html
+    ├── footer.html
+    ├── cards.html
+    └── modals.html

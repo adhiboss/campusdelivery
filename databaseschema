@@ -1,0 +1,31 @@
+Users
+│
+├── Students
+├── Delivery Partners
+├── Vendors
+└── Admin
+
+Orders
+│
+├── Order Items
+├── Tracking
+├── Payments
+└── Discounts
+
+Parcels
+│
+├── Pickup Counter
+├── QR Code
+└── Pickup Status
+
+Marketplace
+│
+├── Listings
+├── Sellers
+└── Messages
+
+Notifications
+
+Support Tickets
+
+Analytics
