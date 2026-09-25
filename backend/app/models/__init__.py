@@ -6,3 +6,4 @@ from app.models.pickup_counter import PickupCounter
 from app.models.delivery import Delivery
 from app.models.notification import Notification
 from app.models.marketplace import MarketplaceListing
+from app.models.university_store import StoreProduct
