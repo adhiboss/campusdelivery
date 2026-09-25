@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.v1.auth import router as auth_router
 from app.api.v1.deliveries import router as deliveries_router
 from app.api.v1.notifications import router as notifications_router
+from app.api.v1.marketplace import router as marketplace_router
 
 app = FastAPI(
     title="Campus Delivery Hub API",
@@ -22,6 +23,7 @@ app.add_middleware(
 app.include_router(auth_router, prefix="/api/v1/auth", tags=["Auth"])
 app.include_router(deliveries_router, prefix="/api/v1/deliveries", tags=["Deliveries"])
 app.include_router(notifications_router, prefix="/api/v1/notifications", tags=["Notifications"])
+app.include_router(marketplace_router, prefix="/api/v1/marketplace", tags=["Marketplace"])
 
 @app.get("/health")
 def health_check():

@@ -5,3 +5,4 @@ from app.models.delivery_partner import DeliveryPartner
 from app.models.pickup_counter import PickupCounter
 from app.models.delivery import Delivery
 from app.models.notification import Notification
+from app.models.marketplace import MarketplaceListing
