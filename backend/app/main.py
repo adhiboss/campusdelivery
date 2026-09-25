@@ -29,6 +29,10 @@ app.include_router(marketplace_router, prefix="/api/v1/marketplace", tags=["Mark
 app.include_router(store_router, prefix="/api/v1/store", tags=["Store"])
 app.include_router(discounts_router, prefix="/api/v1/discounts", tags=["Discounts"])
 
+# Mount Socket.IO
+from app.api.websockets import sio_app
+app.mount("/ws", sio_app)
+
 @app.get("/health")
 def health_check():
     return {"status": "healthy"}
