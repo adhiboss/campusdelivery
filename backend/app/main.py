@@ -5,6 +5,7 @@ from app.api.v1.deliveries import router as deliveries_router
 from app.api.v1.notifications import router as notifications_router
 from app.api.v1.marketplace import router as marketplace_router
 from app.api.v1.university_store import router as store_router
+from app.api.v1.discounts import router as discounts_router
 
 app = FastAPI(
     title="Campus Delivery Hub API",
@@ -26,6 +27,7 @@ app.include_router(deliveries_router, prefix="/api/v1/deliveries", tags=["Delive
 app.include_router(notifications_router, prefix="/api/v1/notifications", tags=["Notifications"])
 app.include_router(marketplace_router, prefix="/api/v1/marketplace", tags=["Marketplace"])
 app.include_router(store_router, prefix="/api/v1/store", tags=["Store"])
+app.include_router(discounts_router, prefix="/api/v1/discounts", tags=["Discounts"])
 
 @app.get("/health")
 def health_check():
