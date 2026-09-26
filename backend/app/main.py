@@ -7,6 +7,20 @@ from app.api.v1.marketplace import router as marketplace_router
 from app.api.v1.university_store import router as store_router
 from app.api.v1.discounts import router as discounts_router
 
+from app.db.database import engine
+from app.models.base import Base
+import app.models.user
+import app.models.delivery
+import app.models.marketplace
+import app.models.university_store
+import app.models.delivery_partner
+import app.models.discount
+import app.models.notification
+import app.models.pickup_counter
+import app.models.student
+
+Base.metadata.create_all(bind=engine)
+
 app = FastAPI(
     title="Campus Delivery Hub API",
     description="API for managing deliveries, users, and marketplace at Jain University.",

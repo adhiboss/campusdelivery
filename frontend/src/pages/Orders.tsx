@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 const Orders: React.FC = () => {
-  const [orders, setOrders] = useState([]);
+  const [orders] = useState<any[]>([
+    { id: 1, tracking_id: 'TRK-123', status: 'Pending' }
+  ]);
 
   useEffect(() => {
     // Fetch orders API call here

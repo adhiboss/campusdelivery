@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 const Marketplace: React.FC = () => {
-  const [listings, setListings] = useState([]);
+  const [listings] = useState<any[]>([
+    { id: 1, title: 'Used Textbooks', price: 20 },
+    { id: 2, title: 'Mini Fridge', price: 50 }
+  ]);
 
   useEffect(() => {
     // Fetch marketplace listings API call here

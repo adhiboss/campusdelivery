@@ -7,6 +7,7 @@ from app.models.user import User
 from app.schemas.user import UserCreate, UserResponse, Token
 from app.core.security import get_password_hash, verify_password, create_access_token
 from app.core.config import settings
+from app.api.deps import get_current_user
 
 router = APIRouter()
 

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 const Store: React.FC = () => {
-  const [products, setProducts] = useState([]);
+  const [products] = useState<any[]>([
+    { id: 1, name: 'University Hoodie', price: 40 }
+  ]);
 
   useEffect(() => {
     // Fetch store products API call here
